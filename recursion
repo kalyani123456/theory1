@@ -1,0 +1,19 @@
+//string palantrome 
+class HelloWorld {
+    public static void main(String[] args) {
+        String n[] = new String[]{"k","aw","s","a","k"};
+      
+        System.out.println("yes "+  reC(n,0));
+     }
+     
+     public static int reC(String arr[],int n){
+          if(n>arr.length/2){
+                return 1;
+          }
+         if(!arr[n].equals(arr[arr.length-1-n])){
+             return 0;
+         }
+        
+         return  reC(arr,n+1);
+     }
+}
